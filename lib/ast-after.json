@@ -1,0 +1,69 @@
+{
+	"range": [
+		154,
+		169
+	],
+	"type": "Program",
+	"body": [
+		{
+			"range": [
+				154,
+				169
+			],
+			"type": "ExpressionStatement",
+			"expression": {
+				"range": [
+					154,
+					168
+				],
+				"type": "CallExpression",
+				"callee": {
+					"range": [
+						154,
+						164
+					],
+					"type": "MemberExpression",
+					"computed": false,
+					"object": {
+						"range": [
+							154,
+							157
+						],
+						"type": "Identifier",
+						"name": "obj",
+						"buildtimeReplace": true,
+						"buildtimeComputedValue": {},
+						"buildtimeReference": [
+							"obj"
+						]
+					},
+					"property": {
+						"range": [
+							158,
+							164
+						],
+						"type": "Identifier",
+						"name": "method"
+					},
+					"buildtimeReference": [
+						"obj",
+						"method"
+					]
+				},
+				"arguments": [
+					{
+						"range": [
+							165,
+							167
+						],
+						"type": "Literal",
+						"value": 42,
+						"raw": "42",
+						"buildtimeComputedValue": 42
+					}
+				],
+				"buildtimeComputedValue": "<42>"
+			}
+		}
+	]
+}
