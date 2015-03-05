@@ -1,23 +1,24 @@
 {
 	"range": [
 		0,
-		81
+		103
 	],
 	"type": "Program",
 	"body": [
 		{
 			"range": [
 				0,
-				81
+				103
 			],
 			"type": "IfStatement",
 			"test": {
 				"range": [
 					4,
-					22
+					25
 				],
-				"type": "ConditionalExpression",
-				"test": {
+				"type": "LogicalExpression",
+				"operator": "||",
+				"left": {
 					"range": [
 						4,
 						18
@@ -70,58 +71,55 @@
 					],
 					"buildtimeComputedValue": "<42>"
 				},
-				"consequent": {
+				"right": {
 					"range": [
-						19,
-						20
+						22,
+						25
 					],
-					"type": "Literal",
-					"value": 0,
-					"raw": "0",
-					"buildtimeComputedValue": 0
+					"type": "CallExpression",
+					"callee": {
+						"range": [
+							22,
+							23
+						],
+						"type": "Identifier",
+						"name": "z",
+						"buildtimeReplace": true
+					},
+					"arguments": []
 				},
-				"alternate": {
-					"range": [
-						21,
-						22
-					],
-					"type": "Literal",
-					"value": 1,
-					"raw": "1",
-					"buildtimeComputedValue": 1
-				},
-				"buildtimeComputedValue": 0
+				"buildtimeComputedValue": "<42>"
 			},
 			"consequent": {
 				"range": [
-					23,
-					48
+					26,
+					70
 				],
 				"type": "BlockStatement",
 				"body": [
 					{
 						"range": [
-							27,
-							45
+							30,
+							67
 						],
 						"type": "ExpressionStatement",
 						"expression": {
 							"range": [
-								27,
-								44
+								30,
+								66
 							],
 							"type": "CallExpression",
 							"callee": {
 								"range": [
-									27,
-									38
+									30,
+									41
 								],
 								"type": "MemberExpression",
 								"computed": false,
 								"object": {
 									"range": [
-										27,
-										34
+										30,
+										37
 									],
 									"type": "Identifier",
 									"name": "console",
@@ -129,8 +127,8 @@
 								},
 								"property": {
 									"range": [
-										35,
-										38
+										38,
+										41
 									],
 									"type": "Identifier",
 									"name": "log"
@@ -139,13 +137,72 @@
 							"arguments": [
 								{
 									"range": [
-										39,
-										43
+										42,
+										65
 									],
-									"type": "Literal",
-									"value": "if",
-									"raw": "'if'",
-									"buildtimeComputedValue": "if"
+									"type": "MemberExpression",
+									"computed": false,
+									"object": {
+										"range": [
+											42,
+											56
+										],
+										"type": "CallExpression",
+										"callee": {
+											"range": [
+												42,
+												52
+											],
+											"type": "MemberExpression",
+											"computed": false,
+											"object": {
+												"range": [
+													42,
+													45
+												],
+												"type": "Identifier",
+												"name": "obj",
+												"buildtimeReplace": true,
+												"buildtimeComputedValue": {},
+												"buildtimeReference": [
+													"obj"
+												]
+											},
+											"property": {
+												"range": [
+													46,
+													52
+												],
+												"type": "Identifier",
+												"name": "method"
+											},
+											"buildtimeReference": [
+												"obj",
+												"method"
+											]
+										},
+										"arguments": [
+											{
+												"range": [
+													53,
+													55
+												],
+												"type": "Literal",
+												"value": 42,
+												"raw": "42",
+												"buildtimeComputedValue": 42
+											}
+										],
+										"buildtimeComputedValue": "<42>"
+									},
+									"property": {
+										"range": [
+											57,
+											65
+										],
+										"type": "Identifier",
+										"name": "toString"
+									}
 								}
 							]
 						}
@@ -154,34 +211,34 @@
 			},
 			"alternate": {
 				"range": [
-					54,
-					81
+					76,
+					103
 				],
 				"type": "BlockStatement",
 				"body": [
 					{
 						"range": [
-							58,
-							78
+							80,
+							100
 						],
 						"type": "ExpressionStatement",
 						"expression": {
 							"range": [
-								58,
-								77
+								80,
+								99
 							],
 							"type": "CallExpression",
 							"callee": {
 								"range": [
-									58,
-									69
+									80,
+									91
 								],
 								"type": "MemberExpression",
 								"computed": false,
 								"object": {
 									"range": [
-										58,
-										65
+										80,
+										87
 									],
 									"type": "Identifier",
 									"name": "console",
@@ -189,8 +246,8 @@
 								},
 								"property": {
 									"range": [
-										66,
-										69
+										88,
+										91
 									],
 									"type": "Identifier",
 									"name": "log"
@@ -199,8 +256,8 @@
 							"arguments": [
 								{
 									"range": [
-										70,
-										76
+										92,
+										98
 									],
 									"type": "Literal",
 									"value": "else",
