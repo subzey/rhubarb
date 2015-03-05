@@ -1,14 +1,14 @@
 {
 	"range": [
 		0,
-		103
+		105
 	],
 	"type": "Program",
 	"body": [
 		{
 			"range": [
 				0,
-				103
+				105
 			],
 			"type": "IfStatement",
 			"test": {
@@ -39,7 +39,9 @@
 							"type": "Identifier",
 							"name": "obj",
 							"buildtimeReplace": true,
-							"buildtimeComputedValue": {},
+							"buildtimeComputedValue": {
+								"foo": 42
+							},
 							"buildtimeReference": [
 								"obj"
 							]
@@ -93,20 +95,20 @@
 			"consequent": {
 				"range": [
 					26,
-					70
+					72
 				],
 				"type": "BlockStatement",
 				"body": [
 					{
 						"range": [
 							30,
-							67
+							69
 						],
 						"type": "ExpressionStatement",
 						"expression": {
 							"range": [
 								30,
-								66
+								68
 							],
 							"type": "CallExpression",
 							"callee": {
@@ -138,71 +140,82 @@
 								{
 									"range": [
 										42,
-										65
+										67
 									],
-									"type": "MemberExpression",
-									"computed": false,
-									"object": {
+									"type": "CallExpression",
+									"callee": {
 										"range": [
 											42,
-											56
-										],
-										"type": "CallExpression",
-										"callee": {
-											"range": [
-												42,
-												52
-											],
-											"type": "MemberExpression",
-											"computed": false,
-											"object": {
-												"range": [
-													42,
-													45
-												],
-												"type": "Identifier",
-												"name": "obj",
-												"buildtimeReplace": true,
-												"buildtimeComputedValue": {},
-												"buildtimeReference": [
-													"obj"
-												]
-											},
-											"property": {
-												"range": [
-													46,
-													52
-												],
-												"type": "Identifier",
-												"name": "method"
-											},
-											"buildtimeReference": [
-												"obj",
-												"method"
-											]
-										},
-										"arguments": [
-											{
-												"range": [
-													53,
-													55
-												],
-												"type": "Literal",
-												"value": 42,
-												"raw": "42",
-												"buildtimeComputedValue": 42
-											}
-										],
-										"buildtimeComputedValue": "<42>"
-									},
-									"property": {
-										"range": [
-											57,
 											65
 										],
-										"type": "Identifier",
-										"name": "toString"
-									}
+										"type": "MemberExpression",
+										"computed": false,
+										"object": {
+											"range": [
+												42,
+												56
+											],
+											"type": "CallExpression",
+											"callee": {
+												"range": [
+													42,
+													52
+												],
+												"type": "MemberExpression",
+												"computed": false,
+												"object": {
+													"range": [
+														42,
+														45
+													],
+													"type": "Identifier",
+													"name": "obj",
+													"buildtimeReplace": true,
+													"buildtimeComputedValue": {
+														"foo": 42
+													},
+													"buildtimeReference": [
+														"obj"
+													]
+												},
+												"property": {
+													"range": [
+														46,
+														52
+													],
+													"type": "Identifier",
+													"name": "method"
+												},
+												"buildtimeReference": [
+													"obj",
+													"method"
+												]
+											},
+											"arguments": [
+												{
+													"range": [
+														53,
+														55
+													],
+													"type": "Literal",
+													"value": 42,
+													"raw": "42",
+													"buildtimeComputedValue": 42
+												}
+											],
+											"buildtimeComputedValue": "<42>"
+										},
+										"property": {
+											"range": [
+												57,
+												65
+											],
+											"type": "Identifier",
+											"name": "toString"
+										}
+									},
+									"arguments": [],
+									"buildtimeComputedValue": "<42>"
 								}
 							]
 						}
@@ -211,34 +224,34 @@
 			},
 			"alternate": {
 				"range": [
-					76,
-					103
+					78,
+					105
 				],
 				"type": "BlockStatement",
 				"body": [
 					{
 						"range": [
-							80,
-							100
+							82,
+							102
 						],
 						"type": "ExpressionStatement",
 						"expression": {
 							"range": [
-								80,
-								99
+								82,
+								101
 							],
 							"type": "CallExpression",
 							"callee": {
 								"range": [
-									80,
-									91
+									82,
+									93
 								],
 								"type": "MemberExpression",
 								"computed": false,
 								"object": {
 									"range": [
-										80,
-										87
+										82,
+										89
 									],
 									"type": "Identifier",
 									"name": "console",
@@ -246,8 +259,8 @@
 								},
 								"property": {
 									"range": [
-										88,
-										91
+										90,
+										93
 									],
 									"type": "Identifier",
 									"name": "log"
@@ -256,8 +269,8 @@
 							"arguments": [
 								{
 									"range": [
-										92,
-										98
+										94,
+										100
 									],
 									"type": "Literal",
 									"value": "else",
