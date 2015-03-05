@@ -1,210 +1,198 @@
 {
 	"range": [
 		0,
-		71
+		81
 	],
 	"type": "Program",
 	"body": [
 		{
 			"range": [
 				0,
-				71
+				81
 			],
-			"type": "ForStatement",
-			"init": {
-				"range": [
-					5,
-					12
-				],
-				"type": "VariableDeclaration",
-				"declarations": [
-					{
-						"range": [
-							9,
-							12
-						],
-						"type": "VariableDeclarator",
-						"id": {
-							"range": [
-								9,
-								10
-							],
-							"type": "Identifier",
-							"name": "j"
-						},
-						"init": {
-							"range": [
-								11,
-								12
-							],
-							"type": "Literal",
-							"value": 0,
-							"raw": "0"
-						}
-					}
-				],
-				"kind": "var"
-			},
+			"type": "IfStatement",
 			"test": {
 				"range": [
-					14,
-					17
+					4,
+					22
 				],
-				"type": "UpdateExpression",
-				"operator": "--",
-				"argument": {
-					"range": [
-						14,
-						15
-					],
-					"type": "Identifier",
-					"name": "j"
-				},
-				"prefix": false
-			},
-			"update": null,
-			"body": {
-				"range": [
-					20,
-					71
-				],
-				"type": "IfStatement",
+				"type": "ConditionalExpression",
 				"test": {
 					"range": [
-						24,
-						48
+						4,
+						18
 					],
-					"type": "UnaryExpression",
-					"operator": "!",
-					"argument": {
+					"type": "CallExpression",
+					"callee": {
 						"range": [
-							25,
-							48
+							4,
+							14
 						],
-						"type": "UnaryExpression",
-						"operator": "!",
-						"argument": {
+						"type": "MemberExpression",
+						"computed": false,
+						"object": {
 							"range": [
-								27,
-								47
+								4,
+								7
 							],
-							"type": "BinaryExpression",
-							"operator": "+",
-							"left": {
-								"range": [
-									27,
-									30
-								],
-								"type": "Literal",
-								"value": "2",
-								"raw": "'2'"
-							},
-							"right": {
-								"range": [
-									33,
-									47
-								],
-								"type": "CallExpression",
-								"callee": {
-									"range": [
-										33,
-										43
-									],
-									"type": "MemberExpression",
-									"computed": false,
-									"object": {
-										"range": [
-											33,
-											36
-										],
-										"type": "Identifier",
-										"name": "obj"
-									},
-									"property": {
-										"range": [
-											37,
-											43
-										],
-										"type": "Identifier",
-										"name": "method"
-									}
-								},
-								"arguments": [
-									{
-										"range": [
-											44,
-											46
-										],
-										"type": "Literal",
-										"value": 42,
-										"raw": "42"
-									}
-								]
-							}
+							"type": "Identifier",
+							"name": "obj"
 						},
-						"prefix": true
+						"property": {
+							"range": [
+								8,
+								14
+							],
+							"type": "Identifier",
+							"name": "method"
+						}
 					},
-					"prefix": true
-				},
-				"consequent": {
-					"range": [
-						49,
-						71
-					],
-					"type": "BlockStatement",
-					"body": [
+					"arguments": [
 						{
 							"range": [
-								53,
-								68
+								15,
+								17
 							],
-							"type": "ExpressionStatement",
-							"expression": {
-								"range": [
-									53,
-									67
-								],
-								"type": "CallExpression",
-								"callee": {
-									"range": [
-										53,
-										64
-									],
-									"type": "MemberExpression",
-									"computed": false,
-									"object": {
-										"range": [
-											53,
-											60
-										],
-										"type": "Identifier",
-										"name": "console"
-									},
-									"property": {
-										"range": [
-											61,
-											64
-										],
-										"type": "Identifier",
-										"name": "log"
-									}
-								},
-								"arguments": [
-									{
-										"range": [
-											65,
-											66
-										],
-										"type": "Literal",
-										"value": 1,
-										"raw": "1"
-									}
-								]
-							}
+							"type": "Literal",
+							"value": 42,
+							"raw": "42"
 						}
 					]
 				},
-				"alternate": null
+				"consequent": {
+					"range": [
+						19,
+						20
+					],
+					"type": "Literal",
+					"value": 0,
+					"raw": "0"
+				},
+				"alternate": {
+					"range": [
+						21,
+						22
+					],
+					"type": "Literal",
+					"value": 1,
+					"raw": "1"
+				}
+			},
+			"consequent": {
+				"range": [
+					23,
+					48
+				],
+				"type": "BlockStatement",
+				"body": [
+					{
+						"range": [
+							27,
+							45
+						],
+						"type": "ExpressionStatement",
+						"expression": {
+							"range": [
+								27,
+								44
+							],
+							"type": "CallExpression",
+							"callee": {
+								"range": [
+									27,
+									38
+								],
+								"type": "MemberExpression",
+								"computed": false,
+								"object": {
+									"range": [
+										27,
+										34
+									],
+									"type": "Identifier",
+									"name": "console"
+								},
+								"property": {
+									"range": [
+										35,
+										38
+									],
+									"type": "Identifier",
+									"name": "log"
+								}
+							},
+							"arguments": [
+								{
+									"range": [
+										39,
+										43
+									],
+									"type": "Literal",
+									"value": "if",
+									"raw": "'if'"
+								}
+							]
+						}
+					}
+				]
+			},
+			"alternate": {
+				"range": [
+					54,
+					81
+				],
+				"type": "BlockStatement",
+				"body": [
+					{
+						"range": [
+							58,
+							78
+						],
+						"type": "ExpressionStatement",
+						"expression": {
+							"range": [
+								58,
+								77
+							],
+							"type": "CallExpression",
+							"callee": {
+								"range": [
+									58,
+									69
+								],
+								"type": "MemberExpression",
+								"computed": false,
+								"object": {
+									"range": [
+										58,
+										65
+									],
+									"type": "Identifier",
+									"name": "console"
+								},
+								"property": {
+									"range": [
+										66,
+										69
+									],
+									"type": "Identifier",
+									"name": "log"
+								}
+							},
+							"arguments": [
+								{
+									"range": [
+										70,
+										76
+									],
+									"type": "Literal",
+									"value": "else",
+									"raw": "'else'"
+								}
+							]
+						}
+					}
+				]
 			}
 		}
 	]
