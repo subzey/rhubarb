@@ -1,6 +1,6 @@
 {
   "name": "rhubarb",
-  "version": "0.1.0",
+  "version": "0.1.0a",
   "description": "Compile-time js constant inliner",
   "dependencies": {
     "esprima": "^2.0.0"

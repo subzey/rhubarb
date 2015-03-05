@@ -1,55 +1,186 @@
 {
 	"range": [
 		154,
-		169
+		236
 	],
 	"type": "Program",
 	"body": [
 		{
 			"range": [
 				154,
-				169
+				236
 			],
-			"type": "ExpressionStatement",
-			"expression": {
+			"type": "IfStatement",
+			"test": {
 				"range": [
-					154,
-					168
+					158,
+					178
 				],
-				"type": "CallExpression",
-				"callee": {
+				"type": "BinaryExpression",
+				"operator": "+",
+				"left": {
 					"range": [
-						154,
-						164
+						158,
+						161
 					],
-					"type": "MemberExpression",
-					"computed": false,
-					"object": {
-						"range": [
-							154,
-							157
-						],
-						"type": "Identifier",
-						"name": "obj"
-					},
-					"property": {
-						"range": [
-							158,
-							164
-						],
-						"type": "Identifier",
-						"name": "method"
-					}
+					"type": "Literal",
+					"value": "2",
+					"raw": "'2'"
 				},
-				"arguments": [
+				"right": {
+					"range": [
+						164,
+						178
+					],
+					"type": "CallExpression",
+					"callee": {
+						"range": [
+							164,
+							174
+						],
+						"type": "MemberExpression",
+						"computed": false,
+						"object": {
+							"range": [
+								164,
+								167
+							],
+							"type": "Identifier",
+							"name": "obj"
+						},
+						"property": {
+							"range": [
+								168,
+								174
+							],
+							"type": "Identifier",
+							"name": "method"
+						}
+					},
+					"arguments": [
+						{
+							"range": [
+								175,
+								177
+							],
+							"type": "Literal",
+							"value": 42,
+							"raw": "42"
+						}
+					]
+				}
+			},
+			"consequent": {
+				"range": [
+					179,
+					203
+				],
+				"type": "BlockStatement",
+				"body": [
 					{
 						"range": [
-							165,
-							167
+							183,
+							200
 						],
-						"type": "Literal",
-						"value": 42,
-						"raw": "42"
+						"type": "ExpressionStatement",
+						"expression": {
+							"range": [
+								183,
+								199
+							],
+							"type": "CallExpression",
+							"callee": {
+								"range": [
+									183,
+									194
+								],
+								"type": "MemberExpression",
+								"computed": false,
+								"object": {
+									"range": [
+										183,
+										190
+									],
+									"type": "Identifier",
+									"name": "console"
+								},
+								"property": {
+									"range": [
+										191,
+										194
+									],
+									"type": "Identifier",
+									"name": "log"
+								}
+							},
+							"arguments": [
+								{
+									"range": [
+										195,
+										198
+									],
+									"type": "Identifier",
+									"name": "foo"
+								}
+							]
+						}
+					}
+				]
+			},
+			"alternate": {
+				"range": [
+					209,
+					236
+				],
+				"type": "BlockStatement",
+				"body": [
+					{
+						"range": [
+							213,
+							233
+						],
+						"type": "ExpressionStatement",
+						"expression": {
+							"range": [
+								213,
+								232
+							],
+							"type": "CallExpression",
+							"callee": {
+								"range": [
+									213,
+									224
+								],
+								"type": "MemberExpression",
+								"computed": false,
+								"object": {
+									"range": [
+										213,
+										220
+									],
+									"type": "Identifier",
+									"name": "console"
+								},
+								"property": {
+									"range": [
+										221,
+										224
+									],
+									"type": "Identifier",
+									"name": "log"
+								}
+							},
+							"arguments": [
+								{
+									"range": [
+										225,
+										231
+									],
+									"type": "Identifier",
+									"name": "method"
+								}
+							]
+						}
 					}
 				]
 			}

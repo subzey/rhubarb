@@ -9,4 +9,8 @@
 // 	}
 // };
 
-obj.method(42);
+if ('2' + obj.method(42)){
+	console.log(foo);
+} else {
+	console.log(method);
+}
