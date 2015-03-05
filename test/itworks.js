@@ -6,6 +6,9 @@ var result = require('../lib/rhubarb.node.js').inline(
 				return '<' + v + '>';
 			}
 		}
+	},
+	{
+		scope: 'flat'
 	}
 );
 
