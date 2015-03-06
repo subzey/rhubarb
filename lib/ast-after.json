@@ -1,679 +1,191 @@
 {
 	"range": [
 		0,
-		289
+		54
 	],
 	"type": "Program",
 	"body": [
 		{
 			"range": [
 				0,
-				13
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					0,
-					12
-				],
-				"type": "AssignmentExpression",
-				"operator": "=",
-				"left": {
-					"range": [
-						0,
-						7
-					],
-					"type": "MemberExpression",
-					"computed": false,
-					"object": {
-						"range": [
-							0,
-							3
-						],
-						"type": "Identifier",
-						"name": "obj"
-					},
-					"property": {
-						"range": [
-							4,
-							7
-						],
-						"type": "Identifier",
-						"name": "foo"
-					}
-				},
-				"right": {
-					"range": [
-						10,
-						12
-					],
-					"type": "Literal",
-					"value": 33,
-					"raw": "33"
-				}
-			}
-		},
-		{
-			"range": [
-				15,
-				35
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					15,
-					34
-				],
-				"type": "AssignmentExpression",
-				"operator": "=",
-				"left": {
-					"range": [
-						15,
-						29
-					],
-					"type": "MemberExpression",
-					"computed": true,
-					"object": {
-						"range": [
-							15,
-							18
-						],
-						"type": "Identifier",
-						"name": "obj"
-					},
-					"property": {
-						"range": [
-							19,
-							28
-						],
-						"type": "Identifier",
-						"name": "globalFoo",
-						"buildtimeReplace": true,
-						"buildtimeComputedValue": 33,
-						"buildtimeReference": [
-							"globalFoo"
-						]
-					}
-				},
-				"right": {
-					"range": [
-						32,
-						34
-					],
-					"type": "Literal",
-					"value": 77,
-					"raw": "77"
-				}
-			}
-		},
-		{
-			"range": [
-				37,
-				52
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					37,
-					51
-				],
-				"type": "AssignmentExpression",
-				"operator": "=",
-				"left": {
-					"range": [
-						37,
-						46
-					],
-					"type": "Identifier",
-					"name": "globalFoo"
-				},
-				"right": {
-					"range": [
-						49,
-						51
-					],
-					"type": "Literal",
-					"value": 22,
-					"raw": "22"
-				}
-			}
-		},
-		{
-			"range": [
-				54,
-				73
-			],
-			"type": "VariableDeclaration",
-			"declarations": [
-				{
-					"range": [
-						58,
-						72
-					],
-					"type": "VariableDeclarator",
-					"id": {
-						"range": [
-							58,
-							67
-						],
-						"type": "Identifier",
-						"name": "globalFoo"
-					},
-					"init": {
-						"range": [
-							70,
-							72
-						],
-						"type": "Literal",
-						"value": 22,
-						"raw": "22"
-					}
-				}
-			],
-			"kind": "var"
-		},
-		{
-			"range": [
-				77,
-				89
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					77,
-					88
-				],
-				"type": "UpdateExpression",
-				"operator": "++",
-				"argument": {
-					"range": [
-						77,
-						86
-					],
-					"type": "Identifier",
-					"name": "globalFoo"
-				},
-				"prefix": false
-			}
-		},
-		{
-			"range": [
-				93,
-				103
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					93,
-					102
-				],
-				"type": "UpdateExpression",
-				"operator": "++",
-				"argument": {
-					"range": [
-						93,
-						100
-					],
-					"type": "MemberExpression",
-					"computed": false,
-					"object": {
-						"range": [
-							93,
-							96
-						],
-						"type": "Identifier",
-						"name": "obj"
-					},
-					"property": {
-						"range": [
-							97,
-							100
-						],
-						"type": "Identifier",
-						"name": "foo"
-					}
-				},
-				"prefix": false
-			}
-		},
-		{
-			"range": [
-				107,
-				120
-			],
-			"type": "VariableDeclaration",
-			"declarations": [
-				{
-					"range": [
-						111,
-						119
-					],
-					"type": "VariableDeclarator",
-					"id": {
-						"range": [
-							111,
-							114
-						],
-						"type": "Identifier",
-						"name": "obj"
-					},
-					"init": {
-						"range": [
-							117,
-							119
-						],
-						"type": "ObjectExpression",
-						"properties": []
-					}
-				}
-			],
-			"kind": "var"
-		},
-		{
-			"range": [
-				124,
-				229
+				54
 			],
 			"type": "IfStatement",
 			"test": {
 				"range": [
-					128,
-					149
-				],
-				"type": "LogicalExpression",
-				"operator": "||",
-				"left": {
-					"range": [
-						128,
-						142
-					],
-					"type": "CallExpression",
-					"callee": {
-						"range": [
-							128,
-							138
-						],
-						"type": "MemberExpression",
-						"computed": false,
-						"object": {
-							"range": [
-								128,
-								131
-							],
-							"type": "Identifier",
-							"name": "obj",
-							"buildtimeReplace": true,
-							"buildtimeComputedValue": {
-								"foo": 42
-							},
-							"buildtimeReference": [
-								"obj"
-							]
-						},
-						"property": {
-							"range": [
-								132,
-								138
-							],
-							"type": "Identifier",
-							"name": "method"
-						},
-						"buildtimeReference": [
-							"obj",
-							"method"
-						]
-					},
-					"arguments": [
-						{
-							"range": [
-								139,
-								141
-							],
-							"type": "Literal",
-							"value": 42,
-							"raw": "42",
-							"buildtimeComputedValue": 42
-						}
-					],
-					"buildtimeComputedValue": "<42>"
-				},
-				"right": {
-					"range": [
-						146,
-						149
-					],
-					"type": "CallExpression",
-					"callee": {
-						"range": [
-							146,
-							147
-						],
-						"type": "Identifier",
-						"name": "z",
-						"buildtimeReplace": true
-					},
-					"arguments": []
-				},
-				"buildtimeComputedValue": "<42>"
-			},
-			"consequent": {
-				"range": [
-					150,
-					196
-				],
-				"type": "BlockStatement",
-				"body": [
-					{
-						"range": [
-							154,
-							193
-						],
-						"type": "ExpressionStatement",
-						"expression": {
-							"range": [
-								154,
-								192
-							],
-							"type": "CallExpression",
-							"callee": {
-								"range": [
-									154,
-									165
-								],
-								"type": "MemberExpression",
-								"computed": false,
-								"object": {
-									"range": [
-										154,
-										161
-									],
-									"type": "Identifier",
-									"name": "console",
-									"buildtimeReplace": true
-								},
-								"property": {
-									"range": [
-										162,
-										165
-									],
-									"type": "Identifier",
-									"name": "log"
-								}
-							},
-							"arguments": [
-								{
-									"range": [
-										166,
-										191
-									],
-									"type": "CallExpression",
-									"callee": {
-										"range": [
-											166,
-											189
-										],
-										"type": "MemberExpression",
-										"computed": false,
-										"object": {
-											"range": [
-												166,
-												180
-											],
-											"type": "CallExpression",
-											"callee": {
-												"range": [
-													166,
-													176
-												],
-												"type": "MemberExpression",
-												"computed": false,
-												"object": {
-													"range": [
-														166,
-														169
-													],
-													"type": "Identifier",
-													"name": "obj",
-													"buildtimeReplace": true,
-													"buildtimeComputedValue": {
-														"foo": 42
-													},
-													"buildtimeReference": [
-														"obj"
-													]
-												},
-												"property": {
-													"range": [
-														170,
-														176
-													],
-													"type": "Identifier",
-													"name": "method"
-												},
-												"buildtimeReference": [
-													"obj",
-													"method"
-												]
-											},
-											"arguments": [
-												{
-													"range": [
-														177,
-														179
-													],
-													"type": "Literal",
-													"value": 42,
-													"raw": "42",
-													"buildtimeComputedValue": 42
-												}
-											],
-											"buildtimeComputedValue": "<42>"
-										},
-										"property": {
-											"range": [
-												181,
-												189
-											],
-											"type": "Identifier",
-											"name": "toString"
-										}
-									},
-									"arguments": [],
-									"buildtimeComputedValue": "<42>"
-								}
-							]
-						}
-					}
-				]
-			},
-			"alternate": {
-				"range": [
-					202,
-					229
-				],
-				"type": "BlockStatement",
-				"body": [
-					{
-						"range": [
-							206,
-							226
-						],
-						"type": "ExpressionStatement",
-						"expression": {
-							"range": [
-								206,
-								225
-							],
-							"type": "CallExpression",
-							"callee": {
-								"range": [
-									206,
-									217
-								],
-								"type": "MemberExpression",
-								"computed": false,
-								"object": {
-									"range": [
-										206,
-										213
-									],
-									"type": "Identifier",
-									"name": "console",
-									"buildtimeReplace": true
-								},
-								"property": {
-									"range": [
-										214,
-										217
-									],
-									"type": "Identifier",
-									"name": "log"
-								}
-							},
-							"arguments": [
-								{
-									"range": [
-										218,
-										224
-									],
-									"type": "Literal",
-									"value": "else",
-									"raw": "'else'",
-									"buildtimeComputedValue": "else"
-								}
-							]
-						}
-					}
-				]
-			}
-		},
-		{
-			"range": [
-				233,
-				271
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					233,
-					270
+					4,
+					29
 				],
 				"type": "CallExpression",
 				"callee": {
 					"range": [
-						234,
-						267
+						4,
+						13
 					],
-					"type": "FunctionExpression",
-					"id": null,
-					"params": [
-						{
-							"range": [
-								243,
-								246
-							],
-							"type": "Identifier",
-							"name": "obj"
-						}
-					],
-					"defaults": [],
-					"body": {
+					"type": "MemberExpression",
+					"computed": false,
+					"object": {
 						"range": [
-							247,
-							267
+							4,
+							8
 						],
-						"type": "BlockStatement",
-						"body": [
+						"type": "Literal",
+						"value": {},
+						"raw": "/\\d/",
+						"regex": {
+							"pattern": "\\d",
+							"flags": ""
+						},
+						"buildtimeComputedValue": {}
+					},
+					"property": {
+						"range": [
+							9,
+							13
+						],
+						"type": "Identifier",
+						"name": "test"
+					}
+				},
+				"arguments": [
+					{
+						"range": [
+							14,
+							28
+						],
+						"type": "CallExpression",
+						"callee": {
+							"range": [
+								14,
+								24
+							],
+							"type": "MemberExpression",
+							"computed": false,
+							"object": {
+								"range": [
+									14,
+									17
+								],
+								"type": "Identifier",
+								"name": "obj",
+								"buildtimeReplace": true,
+								"buildtimeComputedValue": {
+									"foo": 42
+								},
+								"buildtimeReference": [
+									"obj"
+								]
+							},
+							"property": {
+								"range": [
+									18,
+									24
+								],
+								"type": "Identifier",
+								"name": "method"
+							},
+							"buildtimeReference": [
+								"obj",
+								"method"
+							]
+						},
+						"arguments": [
 							{
 								"range": [
-									251,
-									264
+									25,
+									27
 								],
-								"type": "ExpressionStatement",
-								"expression": {
-									"range": [
-										251,
-										263
-									],
-									"type": "CallExpression",
-									"callee": {
-										"range": [
-											251,
-											261
-										],
-										"type": "MemberExpression",
-										"computed": false,
-										"object": {
-											"range": [
-												251,
-												254
-											],
-											"type": "Identifier",
-											"name": "obj",
-											"buildtimeReplace": true
-										},
-										"property": {
-											"range": [
-												255,
-												261
-											],
-											"type": "Identifier",
-											"name": "method"
-										}
-									},
-									"arguments": []
-								}
+								"type": "Literal",
+								"value": 42,
+								"raw": "42",
+								"buildtimeComputedValue": 42
 							}
-						]
-					},
-					"rest": null,
-					"generator": false,
-					"expression": false
-				},
-				"arguments": []
-			}
-		},
-		{
-			"range": [
-				275,
-				289
-			],
-			"type": "ExpressionStatement",
-			"expression": {
-				"range": [
-					275,
-					288
+						],
+						"buildtimeComputedValue": "<42>"
+					}
 				],
-				"type": "MemberExpression",
-				"computed": false,
-				"object": {
-					"range": [
-						275,
-						278
-					],
-					"type": "Identifier",
-					"name": "obj",
-					"buildtimeReplace": true,
-					"buildtimeComputedValue": {
-						"foo": 42
-					},
-					"buildtimeReference": [
-						"obj"
-					]
-				},
-				"property": {
-					"range": [
-						279,
-						288
-					],
-					"type": "Identifier",
-					"name": "notExists"
-				},
-				"buildtimeReference": [
-					"obj",
-					"notExists"
+				"buildtimeComputedValue": true
+			},
+			"consequent": {
+				"range": [
+					30,
+					54
+				],
+				"type": "BlockStatement",
+				"body": [
+					{
+						"range": [
+							34,
+							51
+						],
+						"type": "ExpressionStatement",
+						"expression": {
+							"range": [
+								34,
+								50
+							],
+							"type": "CallExpression",
+							"callee": {
+								"range": [
+									34,
+									45
+								],
+								"type": "MemberExpression",
+								"computed": false,
+								"object": {
+									"range": [
+										34,
+										41
+									],
+									"type": "Identifier",
+									"name": "console",
+									"buildtimeReplace": true
+								},
+								"property": {
+									"range": [
+										42,
+										45
+									],
+									"type": "Identifier",
+									"name": "log"
+								}
+							},
+							"arguments": [
+								{
+									"range": [
+										46,
+										49
+									],
+									"type": "BinaryExpression",
+									"operator": "+",
+									"left": {
+										"range": [
+											46,
+											47
+										],
+										"type": "Literal",
+										"value": 1,
+										"raw": "1",
+										"buildtimeComputedValue": 1
+									},
+									"right": {
+										"range": [
+											48,
+											49
+										],
+										"type": "Literal",
+										"value": 1,
+										"raw": "1",
+										"buildtimeComputedValue": 1
+									},
+									"buildtimeComputedValue": 2
+								}
+							]
+						}
+					}
 				]
-			}
+			},
+			"alternate": null
 		}
 	]
 }

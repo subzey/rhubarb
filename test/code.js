@@ -1,22 +1,3 @@
-obj.foo = 33;
-obj[globalFoo] = 77;
-globalFoo = 22;
-var globalFoo = 22;
-
-globalFoo++;
-
-obj.foo++;
-
-var obj = {};
-
-if (obj.method(42) || z()){
-	console.log(obj.method(42).toString());
-} else {
-	console.log('else');
+if (/\d/.test(obj.method(42))){
+	console.log(1+1);
 }
-
-(function(obj){
-	obj.method();
-})();
-
-obj.notExists;
