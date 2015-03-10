@@ -1,1 +1,1 @@
-({globalFoo: 42})
+obj.method({'foo': 42}['foo']);
