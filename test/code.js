@@ -19,3 +19,9 @@ if (42){
 } else {
 	console.log('okay');
 }
+
+if (Application.Features.isFeatureEnabled(Math.max(Array.isArray({}))? '?' : 'foo')){
+	console.log('okay');
+} else {
+	console.log('fail');
+}
