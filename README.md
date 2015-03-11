@@ -10,11 +10,11 @@ Currently in development. Do not try to use it yet.
 
 Roadmap:
 
-- [ ] Make builtin js objects usable (`Math`, `Object`, etc.)
-- [ ] Globals reference (`window`, `global`, `self`, custom?)
+- [x] Make builtin js objects usable (`Math`, `Object`, etc.)
+- [x] Globals reference (`window`, `global`, `self`, custom?)
 - [ ] Make a fake-global object accessor
 - [ ] Add more options
-- [ ] Write tests
+- [x] Write tests
 - [ ] Write docs
 - [ ] Make a CLI
 - [ ] Publish on NPM
