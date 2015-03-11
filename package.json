@@ -4,5 +4,11 @@
   "description": "Compile-time js constant inliner",
   "dependencies": {
     "esprima": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
   }
 }
