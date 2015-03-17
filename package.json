@@ -2,6 +2,9 @@
   "name": "rhubarb",
   "version": "0.1.0a",
   "description": "Compile-time js constant inliner",
+  "main": "lib/rhubarb.node.js",
+  "author": "Anton Khlynovskiy <subzey@gmail.com>",
+  "license": "WTFPL",
   "dependencies": {
     "esprima": "^2.0.0"
   },
@@ -10,5 +13,9 @@
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/subzey/rhubarb.git"
   }
 }
