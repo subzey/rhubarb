@@ -211,49 +211,69 @@ describe('Scopes', function(){
 	});
 });
 
-describe('Conditional compilation', function(){
-	it('Should remove if statement branches', function(){
-		var code = [
-			"if (foo){",
-			"\ttruthy1();",
-			"} else {",
-			"\tfalsy1();",
-			"}",
-			"if (!foo){",
-			"\ttruthy2();",
-			"} else {",
-			"\tfalsy2();",
-			"}"
-		].join('\n');
-		var expected = [
-			"truthy1();",
-			"falsy2();"
-		].join('\n');
-		var result = rhubarb.inline(code, {
-			foo: 42
-		});
-		assert.equal(expected, result);
-	});
-	it('Should work with nested ifs', function(){
-		var code = [
-			"if (foo){",
-			"truthy1();",
-			"if (bar){",
-			"truthy2();",
-			"}",
-			"}"
-		].join('\n');
-		var expected = [
-			"truthy1();",
-			"truthy2();"
-		].join('\n');
-		var result = rhubarb.inline(code, {
-			foo: 42,
-			bar: 'whatever'
-		});
-		assert.equal(expected, result);
-	});
-});
+// describe('Conditional compilation', function(){
+// 	it('Should remove if statement branches', function(){
+// 		var code = [
+// 			"if (foo){",
+// 			"\ttruthy1();",
+// 			"} else {",
+// 			"\tfalsy1();",
+// 			"}",
+// 			"if (!foo){",
+// 			"\ttruthy2();",
+// 			"} else {",
+// 			"\tfalsy2();",
+// 			"}"
+// 		].join('\n');
+// 		var expected = [
+// 			"truthy1();",
+// 			"falsy2();"
+// 		].join('\n');
+// 		var result = rhubarb.inline(code, {
+// 			foo: 42
+// 		});
+// 		assert.equal(expected, result);
+// 	});
+// 	it('Should work with nested ifs', function(){
+// 		var code = [
+// 			"if (foo){",
+// 			"truthy1();",
+// 			"if (bar){",
+// 			"truthy2();",
+// 			"}",
+// 			"}"
+// 		].join('\n');
+// 		var expected = [
+// 			"truthy1();",
+// 			"truthy2();"
+// 		].join('\n');
+// 		var result = rhubarb.inline(code, {
+// 			foo: 42,
+// 			bar: 'whatever'
+// 		});
+// 		assert.equal(expected, result);
+// 	});
+
+// 	it('Should work with else if', function(){
+// 		var code = [
+// 			"if (foo) {",
+// 				"nope1();",
+// 			"} else if (bar) {",
+// 				"nope2();",
+// 			"} else {",
+// 				"fallback();",
+// 			"}"
+// 		].join('\n');
+// 		var expected = [
+// 			"fallback();"
+// 		].join('\n');
+// 		var result = rhubarb.inline(code, {
+// 			foo: 0,
+// 			bar: null
+// 		});
+// 		assert.equal(expected, result);
+// 	});
+// });
 
 describe("builtins", function(){
 	it('Should use builtins', function(){

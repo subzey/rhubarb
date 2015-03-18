@@ -37,14 +37,29 @@ and the state
 and returns following:
 
 ```javascript
-doFunctionFoo();
-console.debug("I'm in debug environment");
+if (true){
+	doFunctionFoo();
+} else {
+	console.log("I haven't feature foo!");
+}
+
+if (true){
+	console.debug("I'm in debug environment");
+}
 ```
+
+## What this stuff doesn't do?
+
+This is not a minifier/compressor. It just inlines constants.
+
+This is not a dead code removal tool. There are some expression computations, but Rhubarb doesn't touch block
+statements. I would like to drop `if` branches if the condition was calculated, but found that this
+apparently simple feature is actually tricky and error-prone.
 
 ## Why not UglifyJS?
 
 UglifyJS2 is a great compression tool with conditional compilation.
-Unfortunately, it cannot always guess if expression have constant value.
+Unfortunately, it cannot always guess if expression evaluates constant value.
 
 This tool can. With your little help.
 
@@ -66,7 +81,7 @@ require("rhubarb").inline(code, state [, options]);
 If state has _(`in` javascript operator is used)_ value, it is used for replacement.
 If it hasn't, code stays the same.
 
-- `options` is an object with options:
+- `options` is an optional object with options:
 
 ### Options
 
@@ -77,20 +92,3 @@ Described the way identifiers are resolved into variables.
 - `global` (default) - only global variables (and its properties) are replaced.
 - `flat` - variables are replaced everywhere, even if there's a local variables with same name
 - `undeclared` - same as `global`, but if a global variable was defined (for example, with `var`), it is skipped
-
-
-## Status
-
-Currently in development. Do not try to use it yet.
-
-Roadmap:
-
-- [x] Make builtin js objects usable (`Math`, `Object`, etc.)
-- [x] Globals reference (`window`, `global`, `self`, custom?)
-- [ ] Make a fake-global object accessor
-- [ ] Add more options
-- [x] Write tests
-- [ ] Write docs
-- [ ] Make a CLI
-- [ ] Publish on NPM
-- [ ] Show warnings

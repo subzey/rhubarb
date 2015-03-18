@@ -1,6 +1,6 @@
 {
   "name": "rhubarb",
-  "version": "0.1.0a",
+  "version": "0.1.0-rc1",
   "description": "Compile-time js constant inliner",
   "main": "lib/rhubarb.node.js",
   "author": "Anton Khlynovskiy <subzey@gmail.com>",
@@ -17,5 +17,11 @@
   "repository" : {
     "type": "git",
     "url": "https://github.com/subzey/rhubarb.git"
-  }
+  },
+  "keywords": [
+    "inline",
+    "constants",
+    "build",
+    "compile"
+  ]
 }
