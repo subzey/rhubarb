@@ -92,3 +92,15 @@ Described the way identifiers are resolved into variables.
 - `global` (default) - only global variables (and its properties) are replaced.
 - `flat` - variables are replaced everywhere, even if there's a local variables with same name
 - `undeclared` - same as `global`, but if a global variable was defined (for example, with `var`), it is skipped
+
+
+## Uncomputables
+
+Sure, we cannot prceisely define all the state at the build time.
+
+There's a special object `UNCOMPUTABLE` exported from module.
+If any variable, property or function result equals to `UNCOMPUTABLE`, it will be ignored.
+
+There's no need to assign this value of all properties, if `state` or any its descendant properties was not defined
+(`hasOwnProperty` in JavaScript), it's assumed to be uncomputable. This approach doesn't work for function calls.
+If you're going to return an object, make sure all uncomputable properties are marked explicitly.

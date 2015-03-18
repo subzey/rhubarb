@@ -1,6 +1,6 @@
 {
   "name": "rhubarb",
-  "version": "0.1.0-rc1",
+  "version": "0.1.0-rc2",
   "description": "Compile-time js constant inliner",
   "main": "lib/rhubarb.node.js",
   "author": "Anton Khlynovskiy <subzey@gmail.com>",
