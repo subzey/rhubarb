@@ -9,12 +9,15 @@
     "esprima": "^2.0.0"
   },
   "devDependencies": {
+    "jshint": "^2.6.3",
     "mocha": "^2.2.1"
   },
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "test-mocha": "node ./node_modules/mocha/bin/mocha -R dot",
+    "test-jshint": "node ./node_modules/jshint/bin/jshint lib",
+    "test": "npm run test-mocha & npm run test-jshint"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/subzey/rhubarb.git"
   },
@@ -23,5 +26,18 @@
     "constants",
     "build",
     "compile"
-  ]
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "jshintConfig": {
+    "eqnull": true,
+    "strict": true,
+    "curly": true,
+    "noarg": true,
+    "unused": true,
+    "undef": true,
+    "-W004": true,
+    "node": true
+  }
 }

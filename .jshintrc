@@ -1,0 +1,10 @@
+{
+	"eqnull": true, /* == null is a valid operation */
+	"strict": true, /* strict mode is required */
+	"curly": true, /* curly braces are required */
+	"noarg": true, /* no arguments.callee */
+	"unused": true, /* warn about unused variables */
+	"undef": true, /* only reference variables explicitly defined */
+	"-W004": true, /* multiple var declarations of same variable */
+	"node": true /* the runtime is node.js */
+}
